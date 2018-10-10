@@ -19,6 +19,10 @@ public class Interaction : MonoBehaviour {
             if (Physics.Raycast(ray, out hit))
             {
                 Debug.DrawRay(ray.origin, ray.direction * 500, Color.red);
+
+				if(hit.tag == "Object_I"){
+						
+				}
             }
         }
     }
