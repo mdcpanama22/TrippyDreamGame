@@ -20,8 +20,8 @@ public class Interaction : MonoBehaviour {
             {
                 Debug.DrawRay(ray.origin, ray.direction * 500, Color.red);
 
-				if(hit.tag == "Object_I"){
-						
+				if(hit.transform.tag == "Object_I"){
+                    hit.transform.GetComponent<_IndividualInteraction>().BoxTestInteraction();
 				}
             }
         }
