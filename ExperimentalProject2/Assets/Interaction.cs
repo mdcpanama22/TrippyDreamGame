@@ -2,6 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * How this works. on update I call a raycast that will search for when the player interacts with something when left clicking
+ * the hit value holds the gameobject it hit
+ * You will differentiate what object is hit based on the tags (example is given with Object_I)
+ * Ideally all the starting interactions will be coded on the _IndividualInteractions script, which will then call the corresponding method for
+ * each specific interaction
+ * 
+ * this should be the starting point of every click interaction
+ * 
+ * THINGS TO REMEMBER WHEN DEBUGGING:
+
+        >Make sure that the gameobject you are interacting with has the correct tag
+        >Make sure that the first call to your interaction is done on the _IndividualInterataction script,
+        this way you can call the start of the function via the script hit.transform.GetComponent<_IndividualInteraction>().NAME_OF_INTERACTION();
+        >
+ */
 public class Interaction : MonoBehaviour {
 
 	// Use this for initialization
@@ -15,11 +31,13 @@ public class Interaction : MonoBehaviour {
         if (Input.GetMouseButton(0))
         {
             RaycastHit hit;
+            //Center of camera view, where the cursor has been manually placed on the UI
 			Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
             if (Physics.Raycast(ray, out hit))
             {
                 Debug.DrawRay(ray.origin, ray.direction * 500, Color.red);
 
+                //CHECK FOR WHICH GAMEOBJECT YOU COLLIDED WITH TO THEN START INTERACTION
 				if(hit.transform.tag == "Object_I"){
                     hit.transform.GetComponent<_IndividualInteraction>().BoxTestInteraction();
 				}
