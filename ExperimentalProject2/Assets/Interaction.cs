@@ -28,7 +28,7 @@ public class Interaction : MonoBehaviour {
 	// Update is called once per frame
 	    void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
             //Center of camera view, where the cursor has been manually placed on the UI
