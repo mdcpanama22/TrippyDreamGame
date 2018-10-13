@@ -215,7 +215,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &496829311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -557,7 +557,7 @@ MonoBehaviour:
   charDelay: 0.05
   createTime: 0.5
   newLinePause: 0.8
-  usingFile: 1
+  usingFile: 0
   inputFile: {fileID: 4900000, guid: ed25901581c6b9c4e9ecb52c408f158c, type: 3}
   inputStrings:
   - '[instant][nlpause=0.8][speed=0.05] This is a <color=red>[swivel=few lines>>0.5]</color>

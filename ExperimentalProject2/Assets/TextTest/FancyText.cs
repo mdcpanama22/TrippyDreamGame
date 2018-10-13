@@ -556,8 +556,12 @@ public class FancyText : BaseMeshEffect {
         else { revealing = true; }
 
         // Resetting all variables
-        charIndex = 0;
+        if (textComponent == null)
+        {
+            textComponent = GetComponent<Text>();
+        }
         startColor = textComponent.color;
+        charIndex = 0;
         speeds.Clear();
         numSpeeds = 0;
         effects.Clear();
@@ -579,7 +583,7 @@ public class FancyText : BaseMeshEffect {
             StopCoroutine("DisplayText");
             numSpeeds = 0;
             numCreators = 0;
-            charIndex = textOutputString.Length - 1;
+            charIndex = textOutputString.Length;
             creators.Clear();
             creatorIndexes.Clear();
             speeds.Clear();
