@@ -41,6 +41,10 @@ public class Interaction : MonoBehaviour {
 				if(hit.transform.tag == "Object_I"){
                     hit.transform.GetComponent<_IndividualInteraction>().BoxTestInteraction();
 				}
+                else
+                {
+                    hit.transform.gameObject.SendMessage("Trigger");
+                }
             }
         }
     }
