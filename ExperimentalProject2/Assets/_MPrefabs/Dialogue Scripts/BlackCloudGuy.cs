@@ -35,6 +35,9 @@ public class BlackCloudGuy : MonoBehaviour {
 	void Start () {
         untoldJokes = new List<Joke>(jokes);
         player = GameObject.Find("FPSController");
+        if (player == null) {
+             player = GameObject.Find("RealFPSController");
+        }
 	}
 	
 	// Update is called once per frame
