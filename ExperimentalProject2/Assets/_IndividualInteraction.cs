@@ -10,7 +10,8 @@ public class _IndividualInteraction : MonoBehaviour {
     public bool _BoxDisplaced;
 	// Use this for initialization
 	void Start () {
-        textbox.SetActive(false);
+        if(textbox != null)
+            textbox.SetActive(false);
         _BoxDisplaced = false;
 	}
 	

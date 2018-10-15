@@ -43,7 +43,7 @@ public class Interaction : MonoBehaviour {
 				}else if(hit.transform.tag == "Object_IE") {
                     hit.transform.GetComponent<_IndividualInteraction>().BoxDisplacement();
 				}
-                else
+                else if (hit.transform.tag == "Smoker")
                 {
                     hit.transform.gameObject.SendMessage("Trigger");
                 }
