@@ -43,7 +43,7 @@ public class BlackCloudGuy : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (active) {
-            if (Vector3.Distance(player.transform.position, transform.position) > 4f) {
+            if (Vector3.Distance(player.transform.position, transform.position) > 6f) {
                 active = false;
                 StartCoroutine("FadeOut");
                 canvas.SetActive(false);
