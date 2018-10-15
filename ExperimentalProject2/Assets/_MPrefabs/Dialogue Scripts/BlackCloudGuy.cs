@@ -29,16 +29,26 @@ public class BlackCloudGuy : MonoBehaviour {
 
     bool active = false;
 
+    GameObject player;
+
 	// Use this for initialization
 	void Start () {
         untoldJokes = new List<Joke>(jokes);
+        player = GameObject.Find("FPSController");
+        if (player == null) {
+             player = GameObject.Find("RealFPSController");
+        }
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetMouseButtonDown(0) && active)
-        {
-           // Trigger();
+        if (active) {
+            if (Vector3.Distance(player.transform.position, transform.position) > 4f) {
+                active = false;
+                StartCoroutine("FadeOut");
+                canvas.SetActive(false);
+                index = 0;
+            }
         }
 	}
 
@@ -51,6 +61,7 @@ public class BlackCloudGuy : MonoBehaviour {
         }
         else if (index == 0)
         {
+            active = true;
             canvas.SetActive(true);
             SetVariables();
             StopCoroutine("FadeOut");

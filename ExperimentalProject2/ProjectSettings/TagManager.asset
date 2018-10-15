@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Object_I
   - Object_IE
+  - Interactable
   layers:
   - Default
   - TransparentFX
