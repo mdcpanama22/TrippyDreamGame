@@ -18,7 +18,13 @@ using UnityEngine;
         this way you can call the start of the function via the script hit.transform.GetComponent<_IndividualInteraction>().NAME_OF_INTERACTION();
         >
  */
+
+
+
 public class Interaction : MonoBehaviour {
+
+    public AudioSource Yes;
+    public AudioSource No;
 
 	// Use this for initialization
 	void Start () {
@@ -48,6 +54,14 @@ public class Interaction : MonoBehaviour {
                     hit.transform.gameObject.SendMessage("Trigger");
                 }
             }
+        }
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            Yes.Play();
+        }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            No.Play();
         }
     }
 }
