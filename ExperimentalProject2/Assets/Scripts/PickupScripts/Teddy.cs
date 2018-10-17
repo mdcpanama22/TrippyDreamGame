@@ -6,17 +6,36 @@ public class Teddy : MonoBehaviour {
 
     public AudioClip[] AudioClips;
 
+    AudioSource audio;
+
+    float clipLoudness;
+    float[] clipSampleData = new float[256];
 
     private void Start()
     {
         GetComponent<Animator>().enabled = false;
+        audio = GetComponentInChildren<AudioSource>();
     }
 
     private void Update()
     {
-        if (!GetComponentInChildren<AudioSource>().isPlaying)
+        if (!audio.isPlaying)
         {
             GetComponent<Animator>().enabled = false;
+        } else
+        {
+            audio.clip.GetData(clipSampleData, audio.timeSamples);
+            clipLoudness = 0f;
+            foreach(float sample in clipSampleData)
+            {
+                clipLoudness += Mathf.Abs(sample);
+            }
+            clipLoudness /= 256;
+            clipLoudness -= 0.03f;
+            clipLoudness *= 10f;
+            clipLoudness = Mathf.Clamp01(clipLoudness);
+            GetComponent<Animator>().Play("Talk", 0, clipLoudness / 2f);
+            print(clipLoudness);
         }
     }
 
@@ -28,14 +47,14 @@ public class Teddy : MonoBehaviour {
 
     public void Use(GameObject obj)
     {
-        GetComponentInChildren<AudioSource>().clip = AudioClips[Random.Range(0, AudioClips.Length)];
-        GetComponentInChildren<AudioSource>().Play();
+        audio.clip = AudioClips[Random.Range(0, AudioClips.Length)];
+        audio.Play();
         GetComponent<Animator>().enabled = true;
     }
 
     public void Drop(GameObject obj)
     {
         GetComponent<Animator>().enabled = false;
-        GetComponentInChildren<AudioSource>().Stop();
+        audio.Stop();
     }
 }
