@@ -13,7 +13,7 @@ public class Pickup : MonoBehaviour {
         {
             if (Input.GetMouseButtonDown(1))
             {
-                held.SendMessage("Use", this.gameObject);
+                held.SendMessage("Use", this.gameObject, SendMessageOptions.DontRequireReceiver);
             }
         }
     }
@@ -25,10 +25,12 @@ public class Pickup : MonoBehaviour {
         held.transform.SetParent(Camera.main.transform);
         held.transform.localPosition = heldOffset;
         held.transform.localRotation = heldRotation;
+        held.GetComponent<Collider>().enabled = false;
         if (held.GetComponent<Rigidbody>() != null)
         {
             held.GetComponent<Rigidbody>().isKinematic = true;
         }
+        held.SendMessage("Grab", this.gameObject, SendMessageOptions.DontRequireReceiver);
     }
 
     public void Drop()
@@ -37,11 +39,13 @@ public class Pickup : MonoBehaviour {
         {
             held.transform.parent = null;
             held.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 1f;
+            held.GetComponent<Collider>().enabled = true;
             if (held.GetComponent<Rigidbody>() != null)
             {
                 held.GetComponent<Rigidbody>().isKinematic = false;
                 held.GetComponent<Rigidbody>().velocity = Camera.main.transform.forward * 3f;
             }
+            held.SendMessage("Drop", this.gameObject, SendMessageOptions.DontRequireReceiver);
             held = null;
         }
     }
