@@ -19,7 +19,7 @@ public class Movement_Around : MonoBehaviour {
     }
     // Update is called once per frame
     void Update () {
-        if (GetComponent<_IndividualInteraction>()._BoxDisplaced){
+        if (GetComponent<Cube_Planet>()._BoxDisplaced){
             Transform current = transform;
             transform.RotateAround(new Vector3(0f,0f,0f), Vector3.up, speed * Time.deltaTime);
             transform.RotateAround(current.position, current.up, speed2 * Time.deltaTime);

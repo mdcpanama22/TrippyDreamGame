@@ -1,11 +1,4 @@
-﻿// Upgrade NOTE: upgraded instancing buffer 'Props' to new syntax.
-
-// Upgrade NOTE: replaced 'glstate.matrix.mvp' with 'UNITY_MATRIX_MVP'
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-// Uses geometry normals to distort the image behind, and
-// an additional texture to tint the color.
-
-Shader "Custom/Refract" {
+﻿Shader "Custom/Refract" {
 	Properties{
 		_Color("Color", Color) = (1,1,1,1)
 		_MainTex("Albedo (RGB)", 2D) = "white" {}
@@ -37,6 +30,7 @@ Shader "Custom/Refract" {
 	float _X_Length;
 	float _Y_Length;
 	
+	
 	fixed4 Swirl(sampler2D tex, inout float2 uv) {
 		float radius = _ScreenParams.x;
 		float2 center = float2(_ScreenParams.x * _X_Length/2, _ScreenParams.y * _Y_Length/2);
@@ -44,18 +38,18 @@ Shader "Custom/Refract" {
 		float2 tc = uv * texSize;
 		tc -= center;
 		float dist = length(tc);
-		float angle = sin(_Time.y * 0.15);
-		if (dist < radius)
+		float angle = sin(_Time.y * 0.25);
+		if (dist < radius * 3)
 		{
 			float percent = (radius - dist) / radius;
 			float theta = percent * percent * angle * 28.0;
 			float s = sin(theta);
 			float c = cos(theta);
-			tc = float2(dot(tc, float2(c, -s)), dot(tc, float2(s, c)));
+			tc = float2(dot(tc, float2(c, -s)), dot(tc, float2(s,-c)));
 
 		}
-		tc += center;
 		
+		tc += center;
 		float3 color = tex2D(tex, tc / texSize).rgb;
 		//color.r = 1.0;
 		return fixed4(color, 1.0);

@@ -5,9 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Object_I
-  - Object_IE
   - Interactable
   - Pickup
+  - Interactable_Far
   layers:
   - Default
   - TransparentFX

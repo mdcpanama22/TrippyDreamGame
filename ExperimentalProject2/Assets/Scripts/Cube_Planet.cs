@@ -1,12 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class _IndividualInteraction : MonoBehaviour {
+public class Cube_Planet : MonoBehaviour {
 
-
-    [HideInInspector]
+	[HideInInspector]
     public bool _BoxDisplaced;
 
 	void Start () {

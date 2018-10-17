@@ -44,15 +44,16 @@ public class Interaction : MonoBehaviour {
                 Debug.DrawRay(ray.origin, ray.direction * 500, Color.red);
 
                 //CHECK FOR WHICH GAMEOBJECT YOU COLLIDED WITH TO THEN START INTERACTION
-				if(hit.transform.tag == "Object_I"){
-                    hit.transform.GetComponent<_IndividualInteraction>().BoxTestInteraction();
-				}else if(hit.transform.tag == "Object_IE") {
-                    hit.transform.GetComponent<_IndividualInteraction>().BoxDisplacement();
+				if(hit.transform.tag == "Interactable_Far"){
+                    hit.transform.gameObject.SendMessage("Trigger");
 				}
                 else if (hit.transform.tag == "Interactable" && hit.distance < 3f)
                 {
                     hit.transform.gameObject.SendMessage("Trigger");
                 }
+				else if(hit.transform.tag == "Interactable"){
+					hit.transform.gameObject.SendMessage("Trigger");
+				}
                 else if (hit.transform.tag == "Pickup" && hit.distance < 3f)
                 {
                     GetComponent<Pickup>().Grab(hit.transform.gameObject);

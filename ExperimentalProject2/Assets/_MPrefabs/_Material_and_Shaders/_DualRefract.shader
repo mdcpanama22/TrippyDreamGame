@@ -1,18 +1,9 @@
-﻿// Upgrade NOTE: upgraded instancing buffer 'Props' to new syntax.
-
-// Upgrade NOTE: replaced 'glstate.matrix.mvp' with 'UNITY_MATRIX_MVP'
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-// Uses geometry normals to distort the image behind, and
-// an additional texture to tint the color.
-
-Shader "Custom/Refract" {
+﻿Shader "Custom/Refract" {
 	Properties{
 		_Color("Color", Color) = (1,1,1,1)
 		_MainTex("Albedo (RGB)", 2D) = "white" {}
 	_Glossiness("Smoothness", Range(0,1)) = 0.5
-		_Metallic("Metallic", Range(0,1)) = 0.0
-		_X_Length("X", Range(0, 10)) = 4.0
-		_Y_Length("Y", Range(0, 10)) = 5.0
+		_Metallic("Metallic", Range(0,1)) = 1.0
 	}
 		SubShader{
 		Tags{ "RenderType" = "Opaque" }
@@ -34,13 +25,11 @@ Shader "Custom/Refract" {
 	half _Glossiness;
 	half _Metallic;
 	fixed4 _Color;
-	float _X_Length;
-	float _Y_Length;
-	
-	fixed4 Swirl(sampler2D tex, inout float2 uv) {
+
+		fixed4 DSwirl(sampler2D tex, inout float2 uv) {
 		float radius = _ScreenParams.x;
-		float2 center = float2(_ScreenParams.x * _X_Length/2, _ScreenParams.y * _Y_Length/2);
-		float2 texSize = float2(_ScreenParams.x	* _X_Length , _ScreenParams.y * _Y_Length);
+		float2 center = float2(_ScreenParams.x, _ScreenParams.y*2);
+		float2 texSize = float2(_ScreenParams.x/0.25	 , _ScreenParams.y /0.20);
 		float2 tc = uv * texSize;
 		tc -= center;
 		float dist = length(tc);
@@ -56,13 +45,30 @@ Shader "Custom/Refract" {
 		}
 		tc += center;
 		
-		float3 color = tex2D(tex, tc / texSize).rgb;
+		 center = float2(_ScreenParams.x*3, _ScreenParams.y * 2);
+		float2 texSize2 = float2(_ScreenParams.x / 0.25, _ScreenParams.y / .20);
+		float2 tc2 = uv * texSize2;
+		tc2 -= center;
+		dist = length(tc2);
+		angle = sin(_Time.y * 0.15);
+		if (dist < radius)
+		{
+			float percent = (radius - dist) / radius;
+			float theta = percent * percent * angle * 28.0;
+			float s = sin(theta);
+			float c = cos(theta);
+			tc2 = float2(dot(tc2, float2(c, -s)), dot(tc2, float2(s, c)));
+
+		}
+		tc2 += center;
+		
+		float3 color = (tex2D(tex, tc / texSize) + tex2D(tex, tc2/texSize2)).rgb;
 		//color.r = 1.0;
 		return fixed4(color, 1.0);
 	}
 
 	void surf(Input IN, inout SurfaceOutputStandard o) {
-		fixed4 c = Swirl(_MainTex, IN.uv_MainTex.xy) * _Color;
+		fixed4 c = DSwirl(_MainTex, IN.uv_MainTex.xy) * _Color;
 		
 		o.Albedo = c.rgb;
 		// Metallic and smoothness come from slider variables

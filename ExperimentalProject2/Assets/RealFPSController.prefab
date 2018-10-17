@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 54304272978240128}
   - component: {fileID: 82188504504223330}
   - component: {fileID: 114753774752978744}
+  - component: {fileID: 114335211683910232}
   - component: {fileID: 114136053220180916}
   m_Layer: 0
   m_Name: RealFPSController
@@ -56,8 +57,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1178107614077350}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.9202728, y: 2.078, z: -9.549652}
+  m_LocalRotation: {x: 0, y: -0.39794862, z: 0, w: 0.9174077}
+  m_LocalPosition: {x: -2.9202728, y: 2.2304437, z: -9.549414}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4382272690952072}
@@ -70,7 +71,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1283255918134822}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.31978634, y: 0, z: 0, w: 0.9474896}
   m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -148,7 +149,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.21
   m_Pitch: 1
@@ -245,6 +246,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4806930557b59f4291cb2aa9d62b7b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Yes: {fileID: 0}
+  No: {fileID: 0}
 --- !u!114 &114293602589884684
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -256,7 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05ec5cf00ca181d45a42ba1870e148c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IsWalking: 0
+  m_IsWalking: 1
   m_WalkSpeed: 5
   m_RunSpeed: 10
   m_RunstepLenghten: 0.7
@@ -274,8 +277,8 @@ MonoBehaviour:
     lockCursor: 1
   m_UseFovKick: 1
   m_FovKick:
-    Camera: {fileID: 0}
-    originalFov: 0
+    Camera: {fileID: 20208715152426062}
+    originalFov: 60
     FOVIncrease: 3
     TimeToIncrease: 1
     TimeToDecrease: 1
@@ -368,6 +371,20 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
   m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
+--- !u!114 &114335211683910232
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178107614077350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c054046fb2c9bda478ad660ec8e8d871, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  held: {fileID: 0}
+  heldOffset: {x: 0, y: -0.4, z: 0.8}
+  heldRotation: {x: 0, y: 0, z: 0, w: 1}
 --- !u!114 &114753774752978744
 MonoBehaviour:
   m_ObjectHideFlags: 1
