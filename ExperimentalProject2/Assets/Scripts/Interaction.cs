@@ -53,8 +53,19 @@ public class Interaction : MonoBehaviour {
                 {
                     hit.transform.gameObject.SendMessage("Trigger");
                 }
+                else if (hit.transform.tag == "Pickup" && hit.distance < 3f)
+                {
+                    GetComponent<Pickup>().Grab(hit.transform.gameObject);
+                } else
+                {
+                    GetComponent<Pickup>().Drop();
+                }
             }
-        }
+            else 
+            {
+                GetComponent<Pickup>().Drop();
+            }
+        } 
         if (Input.GetKeyDown(KeyCode.Y))
         {
             Yes.Play();
