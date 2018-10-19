@@ -8,6 +8,14 @@ public class Pickup : MonoBehaviour {
     public Vector3 heldOffset = new Vector3(0f, -0.4f, 0.8f);
     public Quaternion heldRotation = Quaternion.identity;
 
+    GameObject pickupUI;
+
+    private void Start()
+    {
+        pickupUI = GameObject.Find("PickupUI");
+        pickupUI.SetActive(false);
+    }
+
     void Update() {
         if (held != null)
         {
@@ -20,6 +28,7 @@ public class Pickup : MonoBehaviour {
 
     public void Grab(GameObject obj)
     {
+        pickupUI.SetActive(true);
         if (held != null) { Drop(); }
         held = obj;
         held.transform.SetParent(Camera.main.transform);
@@ -37,6 +46,7 @@ public class Pickup : MonoBehaviour {
     {
         if (held != null)
         {
+            pickupUI.SetActive(false);
             held.transform.parent = null;
             held.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 1f;
             held.GetComponent<Collider>().enabled = true;
