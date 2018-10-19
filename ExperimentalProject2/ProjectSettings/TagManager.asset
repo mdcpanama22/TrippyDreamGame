@@ -8,6 +8,7 @@ TagManager:
   - Interactable
   - Pickup
   - Interactable_Far
+  - Fire
   layers:
   - Default
   - TransparentFX
