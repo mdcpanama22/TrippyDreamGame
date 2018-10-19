@@ -9,7 +9,12 @@ public class Teddy : MonoBehaviour {
     AudioSource audio;
 
     float clipLoudness;
-    float[] clipSampleData = new float[256];
+    float[] clipSampleData = new float[512];
+
+    float currentTime = 0f;
+
+    float prevLoudness = 0f;
+    float currentLoudness = 0f;
 
     private void Start()
     {
@@ -24,18 +29,24 @@ public class Teddy : MonoBehaviour {
             GetComponent<Animator>().enabled = false;
         } else
         {
-            audio.clip.GetData(clipSampleData, audio.timeSamples);
-            clipLoudness = 0f;
-            foreach(float sample in clipSampleData)
+            currentTime += Time.time;
+            if (currentTime > 0.05f)
             {
-                clipLoudness += Mathf.Abs(sample);
+                currentTime = 0;
+                prevLoudness = clipLoudness;
+                audio.clip.GetData(clipSampleData, audio.timeSamples);
+                clipLoudness = 0f;
+                foreach (float sample in clipSampleData)
+                {
+                    clipLoudness += Mathf.Abs(sample);
+                }
+                clipLoudness /= 512;
+                clipLoudness -= 0.03f;
+                clipLoudness *= 10f;
+                clipLoudness = Mathf.Clamp01(clipLoudness);
             }
-            clipLoudness /= 256;
-            clipLoudness -= 0.03f;
-            clipLoudness *= 10f;
-            clipLoudness = Mathf.Clamp01(clipLoudness);
-            GetComponent<Animator>().Play("Talk", 0, clipLoudness / 2f);
-            print(clipLoudness);
+            currentLoudness = Mathf.Lerp(prevLoudness, clipLoudness, currentTime / 0.05f);
+            GetComponent<Animator>().Play("Talk", 0, currentLoudness / 2f);
         }
     }
 
