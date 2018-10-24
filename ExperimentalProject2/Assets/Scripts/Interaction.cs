@@ -37,11 +37,11 @@ public class Interaction : MonoBehaviour {
     {
         if (Input.GetMouseButtonDown(0))
         {
-            int layer_mask = LayerMask.GetMask("Interaction");
+            //int layer_mask = LayerMask.GetMask("Interaction");
             RaycastHit hit;
             //Center of camera view, where the cursor has been manually placed on the UI
 			Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
-            if (Physics.Raycast(ray, out hit, 1000f, layer_mask))
+            if (Physics.Raycast(ray, out hit, 1000f))
             {
                 Debug.DrawRay(ray.origin, ray.direction * 500, Color.red);
 

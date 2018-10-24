@@ -57,9 +57,18 @@ public class FancyText : BaseMeshEffect {
     public float createTime = 0.5f;
     float numCreators = 0;
 
+    // Audio Stuff
+    AudioSource audio;
+    bool hasAudio = false;
+
     protected override void Start()
     {
         textComponent = GetComponent<Text>();
+        if (GetComponent<AudioSource>() != null)
+        {
+            audio = GetComponent<AudioSource>();
+            hasAudio = true;
+        }
     }
 
     // Update is called once per frame
@@ -539,6 +548,7 @@ public class FancyText : BaseMeshEffect {
                     }
                     if (charDelay != 0f)
                     {
+                        if (hasAudio) { audio.Play(); }
                         yield return new WaitForSeconds(charDelay);
                     }
                 }
