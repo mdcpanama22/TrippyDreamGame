@@ -13,7 +13,8 @@ using UnityEngine;
  * 
  * THINGS TO REMEMBER WHEN DEBUGGING:
 
-        >Make sure that the gameobject you are interacting with has the correct tag
+        >Make sure that the gameobject you are interacting with has the correct tag and Layer
+            >IF YOU WISH TO ADD A LAYER ADD IT TO THE LayerMask.GetMask("Example1", "Example2");
         >Make sure that the first call to your interaction is done on the _IndividualInterataction script,
         this way you can call the start of the function via the script hit.transform.GetComponent<_IndividualInteraction>().NAME_OF_INTERACTION();
         >
@@ -36,10 +37,11 @@ public class Interaction : MonoBehaviour {
     {
         if (Input.GetMouseButtonDown(0))
         {
+            int layer_mask = LayerMask.GetMask("Interaction");
             RaycastHit hit;
             //Center of camera view, where the cursor has been manually placed on the UI
 			Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
-            if (Physics.Raycast(ray, out hit))
+            if (Physics.Raycast(ray, out hit, 1000f, layer_mask))
             {
                 Debug.DrawRay(ray.origin, ray.direction * 500, Color.red);
 
