@@ -39,6 +39,7 @@ public class AppleGuy : MonoBehaviour {
             if (Vector3.Distance(player.transform.position, transform.position) > 6f) {
                 active = false;
                 canvas.SetActive(false);
+                if (GetComponent<AudioSource>() != null && GetComponent<AudioSource>().isPlaying) { GetComponent<AudioSource>().Pause(); }
             }
         }
 	}
@@ -52,6 +53,7 @@ public class AppleGuy : MonoBehaviour {
             {
                 active = true;
                 canvas.SetActive(true);
+                if (GetComponent<AudioSource>() != null && !GetComponent<AudioSource>().isPlaying) { GetComponent<AudioSource>().Play(); }
             }
             if (index < FirstMeet.Length)
             {
@@ -64,6 +66,7 @@ public class AppleGuy : MonoBehaviour {
                 firstTime = false;
                 active = false;
                 canvas.SetActive(false);
+                if (GetComponent<AudioSource>() != null && GetComponent<AudioSource>().isPlaying) { GetComponent<AudioSource>().Pause(); }
             }
         }
         else
@@ -72,12 +75,14 @@ public class AppleGuy : MonoBehaviour {
             {
                 active = false;
                 canvas.SetActive(false);
+                if (GetComponent<AudioSource>() != null && GetComponent<AudioSource>().isPlaying) { GetComponent<AudioSource>().Pause(); }
             }
             else
             {
                 active = true;
                 canvas.SetActive(true);
-                if (index == Dialogue.Length)
+                if (GetComponent<AudioSource>() != null && !GetComponent<AudioSource>().isPlaying) { GetComponent<AudioSource>().Play(); }
+                    if (index == Dialogue.Length)
                 {
                     index = 0;
                 }
