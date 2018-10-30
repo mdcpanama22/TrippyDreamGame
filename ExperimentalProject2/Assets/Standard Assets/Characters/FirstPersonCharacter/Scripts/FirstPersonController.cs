@@ -11,12 +11,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
     public class FirstPersonController : MonoBehaviour
     {
         [SerializeField] private bool m_IsWalking;
-        [SerializeField] private float m_WalkSpeed;
-        [SerializeField] private float m_RunSpeed;
+        [SerializeField] public float m_WalkSpeed;
+        [SerializeField] public float m_RunSpeed;
         [SerializeField] [Range(0f, 1f)] private float m_RunstepLenghten;
-        [SerializeField] private float m_JumpSpeed;
+        [SerializeField] public float m_JumpSpeed;
         [SerializeField] private float m_StickToGroundForce;
-        [SerializeField] private float m_GravityMultiplier;
+        [SerializeField] public float m_GravityMultiplier;
         [SerializeField] private MouseLook m_MouseLook;
         [SerializeField] private bool m_UseFovKick;
         [SerializeField] private FOVKick m_FovKick = new FOVKick();
@@ -254,6 +254,31 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 return;
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
+        }
+
+        public void ResetValues()
+        {
+            m_WalkSpeed = 5;
+            m_RunSpeed = 10;
+            m_JumpSpeed = 10;
+            m_GravityMultiplier = 2;
+        }
+
+        public void SetWalkSpeed (float value)
+        {
+            m_WalkSpeed = value;
+        }
+        public void SetRunSpeed(float value)
+        {
+            m_RunSpeed = value;
+        }
+        public void SetJumpSpeed(float value)
+        {
+            m_JumpSpeed = value;
+        }
+        public void SetGravityMultiplier (float value)
+        {
+            m_GravityMultiplier = value;
         }
     }
 }
