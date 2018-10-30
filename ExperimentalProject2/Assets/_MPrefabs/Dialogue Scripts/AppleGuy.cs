@@ -47,7 +47,11 @@ public class AppleGuy : MonoBehaviour {
 
     public void Trigger()
     {
-        if (firstTime)
+        if (fancyText.revealing)
+        {
+            fancyText.FinishLine();
+        }
+        else if (firstTime)
         {
             if (!active)
             {
