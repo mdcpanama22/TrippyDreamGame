@@ -474,7 +474,7 @@ GameObject:
   - component: {fileID: 4313550928851920}
   - component: {fileID: 95312566365611694}
   m_Layer: 0
-  m_Name: Guido-prefab
+  m_Name: Guido
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
