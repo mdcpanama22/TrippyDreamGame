@@ -68,8 +68,8 @@ Material:
     - _Cutout1: 0
     - _Cutout2: 0
     - _DetailNormalMapScale: 1
-    - _DistortionIntensity: 0.9
-    - _DistortionSpeed: 16.07
+    - _DistortionIntensity: 0.072
+    - _DistortionSpeed: 6.3
     - _DstBlend: 0
     - _Glossiness: 0.5
     - _Metallic: 0
