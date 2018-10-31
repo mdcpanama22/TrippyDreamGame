@@ -10,6 +10,7 @@ TagManager:
   - Interactable_Far
   - Fire
   - Snow
+  - Spooky
   layers:
   - Default
   - TransparentFX
