@@ -48,10 +48,9 @@ public class Bucket : MonoBehaviour
 			RaycastHit hit;
 			//Center of camera view, where the cursor has been manually placed on the UI
 			Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
-			if (Physics.Raycast(ray, out hit, 1000f))
+			if (Physics.Raycast(ray, out hit, 1000f, LayerMask.GetMask("Fire")))
 			{
-				if (hit.transform.tag == "Fire")
-					hit.transform.gameObject.SendMessage("Water", SendMessageOptions.DontRequireReceiver);
+				hit.transform.gameObject.SendMessage("Water", SendMessageOptions.DontRequireReceiver);
 			}
 		}
 	}
