@@ -20,9 +20,13 @@ Material:
     m_TexEnvs:
     - _Texture:
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_Texture: {fileID: 2800000, guid: 0c794a445277bd9468c7ee6983392380, type: 3}
         m_Scale: {x: 600, y: 600}
 =======
+=======
+        m_Texture: {fileID: 2800000, guid: ceb606a8fc57e614caef5a2d2d03ce5e, type: 3}
+>>>>>>> 675027d26d13e3c3a45b483c8f3ba2ab53dc4838
         m_Texture: {fileID: 2800000, guid: 9e5f34dc52d4beb4c9718929a928f7f9, type: 3}
         m_Scale: {x: 200, y: 200}
 >>>>>>> be0b6573f1a01f5c717c51d6345d249f329ede98
