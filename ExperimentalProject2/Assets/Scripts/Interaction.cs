@@ -49,7 +49,7 @@ public class Interaction : MonoBehaviour {
 				if(hit.transform.tag == "Interactable_Far"){
                     hit.transform.gameObject.SendMessage("Trigger");
 				}
-                else if (hit.transform.tag == "Interactable" && hit.distance < 3f)
+                else if (hit.transform.tag == "Interactable" && hit.distance < 10f)
                 {
                     hit.transform.gameObject.SendMessage("Trigger");
                 }

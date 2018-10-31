@@ -1,0 +1,1228 @@
+fileFormatVersion: 2
+guid: f0469764c749169468c091ba81b4f3cc
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: beak_bot
+    100002: beak_bot_end
+    100004: beak_top
+    100006: beak_top_end
+    100008: bot_beak_CTRL
+    100010: bot_beak_CTRL_GRP
+    100012: bot_neck_CTRL
+    100014: bot_neck_CTRL_GRP
+    100016: bot_tail
+    100018: bot_tail_CTRL
+    100020: bot_tail_CTRL_GRP
+    100022: butt
+    100024: butt_CTRL
+    100026: butt_CTRL_GRP
+    100028: chest_CTRL
+    100030: chest_CTRL_GRP
+    100032: CTRLs
+    100034: duck_base1
+    100036: duck_base:duck_base_model
+    100038: duck_base:duck_beak
+    100040: duck_base:duck_body
+    100042: duck_base:duck_legs
+    100044: duck_base:duck_wings
+    100046: duck_base:duck_wings_folded1
+    100048: duck_base:l_duck_wing
+    100050: duck_base:l_leg
+    100052: duck_base:polySurface2
+    100054: duck_base:r__duck_wing
+    100056: duck_base:r_leg
+    100058: eyes_CTRL
+    100060: eyes_CTRL_GRP
+    100062: fedora1
+    100064: fedora:fedora_GEO
+    100066: GEO
+    100068: //RootNode
+    100070: head
+    100072: head_CTRL
+    100074: head_CTRL 1
+    100076: head_top
+    100078: IKs
+    100080: JOINTs
+    100082: l_breast
+    100084: l_eye
+    100086: l_eye_CTRL
+    100088: l_eye_CTRL_GRP
+    100090: l_feathers_CTRL
+    100092: l_feathers_CTRL_GRP
+    100094: l_finger1
+    100096: l_finger1_tip
+    100098: l_finger2
+    100100: l_finger2_tip
+    100102: l_finger3
+    100104: l_finger3_tip
+    100106: l_foot
+    100108: l_foot_CTRL
+    100110: l_foot_CTRL_GRP
+    100112: l_foot_IK
+    100114: l_foot_poleVector
+    100116: l_foot_poleVector_GRP
+    100118: l_leg
+    100120: l_phalanges
+    100122: l_shoulder
+    100124: l_tips_of_toes
+    100126: l_wing
+    100128: l_wing_back_feather_CTRL
+    100130: l_wing_back_feather_CTRL_GRP
+    100132: l_wing_front_feather_CTRL
+    100134: l_wing_front_feather_CTRL_GRP
+    100136: l_wing_mid_feather_CTRL
+    100138: l_wing_mid_feather_CTRL_GRP
+    100140: l_wing_shoulder_CTRL
+    100142: l_wing_shoulder_CTRL_GRP
+    100144: master_CTRL
+    100146: mid_neck_CTRL
+    100148: mid_neck_CTRL_GRP
+    100150: mid_tail
+    100152: mid_tail_CTRL
+    100154: mid_tail_CTRL_GRP
+    100156: mouth
+    100158: neck1
+    100160: neck2
+    100162: pelvis
+    100164: r_breast
+    100166: r_eye
+    100168: r_eye_CTRL
+    100170: r_eye_CTRL_GRP
+    100172: r_feathers_CTRL
+    100174: r_feathers_CTRL_GRP
+    100176: r_finger1
+    100178: r_finger1_tip
+    100180: r_finger2
+    100182: r_finger2_tip
+    100184: r_finger3
+    100186: r_finger3_tip
+    100188: r_foot
+    100190: r_foot_CTRL
+    100192: r_foot_CTRL_GRP
+    100194: r_foot_IK
+    100196: r_foot_poleVector
+    100198: r_foot_poleVector_GRP
+    100200: r_leg
+    100202: r_phalanges
+    100204: r_shoulder
+    100206: r_tips_of_toes
+    100208: r_wing
+    100210: r_wing_back_feather_CTRL
+    100212: r_wing_back_feather_CTRL_GRP
+    100214: r_wing_elbow_CTRL
+    100216: r_wing_elbow_CTRL 1
+    100218: r_wing_elbow_CTRL_GRP
+    100220: r_wing_elbow_CTRL_GRP 1
+    100222: r_wing_front_feather_CTRL
+    100224: r_wing_front_feather_CTRL_GRP
+    100226: r_wing_mid_feather_CTRL
+    100228: r_wing_mid_feather_CTRL_GRP
+    100230: r_wing_shoulder_CTRL
+    100232: r_wing_shoulder_CTRL_GRP
+    100234: RIG
+    100236: root
+    100238: spine1
+    100240: spine2
+    100242: spine3
+    100244: spine4
+    100246: spine_spline_curve
+    100248: spine_spline_IK
+    100250: tail_CTRL
+    100252: tail_CTRL_GRP
+    100254: top_beak_CTRL
+    100256: top_beak_CTRL_GRP
+    100258: top_neck_CTRL
+    100260: top_neck_CTRL_GRP
+    100262: top_tail
+    100264: top_tail_CTRL
+    100266: top_tail_CTRL_GRP
+    100268: whole_body_sansFeet_CTRL
+    100270: whole_body_sansFeet_CTRL_GRP
+    400000: beak_bot
+    400002: beak_bot_end
+    400004: beak_top
+    400006: beak_top_end
+    400008: bot_beak_CTRL
+    400010: bot_beak_CTRL_GRP
+    400012: bot_neck_CTRL
+    400014: bot_neck_CTRL_GRP
+    400016: bot_tail
+    400018: bot_tail_CTRL
+    400020: bot_tail_CTRL_GRP
+    400022: butt
+    400024: butt_CTRL
+    400026: butt_CTRL_GRP
+    400028: chest_CTRL
+    400030: chest_CTRL_GRP
+    400032: CTRLs
+    400034: duck_base1
+    400036: duck_base:duck_base_model
+    400038: duck_base:duck_beak
+    400040: duck_base:duck_body
+    400042: duck_base:duck_legs
+    400044: duck_base:duck_wings
+    400046: duck_base:duck_wings_folded1
+    400048: duck_base:l_duck_wing
+    400050: duck_base:l_leg
+    400052: duck_base:polySurface2
+    400054: duck_base:r__duck_wing
+    400056: duck_base:r_leg
+    400058: eyes_CTRL
+    400060: eyes_CTRL_GRP
+    400062: fedora1
+    400064: fedora:fedora_GEO
+    400066: GEO
+    400068: //RootNode
+    400070: head
+    400072: head_CTRL
+    400074: head_CTRL 1
+    400076: head_top
+    400078: IKs
+    400080: JOINTs
+    400082: l_breast
+    400084: l_eye
+    400086: l_eye_CTRL
+    400088: l_eye_CTRL_GRP
+    400090: l_feathers_CTRL
+    400092: l_feathers_CTRL_GRP
+    400094: l_finger1
+    400096: l_finger1_tip
+    400098: l_finger2
+    400100: l_finger2_tip
+    400102: l_finger3
+    400104: l_finger3_tip
+    400106: l_foot
+    400108: l_foot_CTRL
+    400110: l_foot_CTRL_GRP
+    400112: l_foot_IK
+    400114: l_foot_poleVector
+    400116: l_foot_poleVector_GRP
+    400118: l_leg
+    400120: l_phalanges
+    400122: l_shoulder
+    400124: l_tips_of_toes
+    400126: l_wing
+    400128: l_wing_back_feather_CTRL
+    400130: l_wing_back_feather_CTRL_GRP
+    400132: l_wing_front_feather_CTRL
+    400134: l_wing_front_feather_CTRL_GRP
+    400136: l_wing_mid_feather_CTRL
+    400138: l_wing_mid_feather_CTRL_GRP
+    400140: l_wing_shoulder_CTRL
+    400142: l_wing_shoulder_CTRL_GRP
+    400144: master_CTRL
+    400146: mid_neck_CTRL
+    400148: mid_neck_CTRL_GRP
+    400150: mid_tail
+    400152: mid_tail_CTRL
+    400154: mid_tail_CTRL_GRP
+    400156: mouth
+    400158: neck1
+    400160: neck2
+    400162: pelvis
+    400164: r_breast
+    400166: r_eye
+    400168: r_eye_CTRL
+    400170: r_eye_CTRL_GRP
+    400172: r_feathers_CTRL
+    400174: r_feathers_CTRL_GRP
+    400176: r_finger1
+    400178: r_finger1_tip
+    400180: r_finger2
+    400182: r_finger2_tip
+    400184: r_finger3
+    400186: r_finger3_tip
+    400188: r_foot
+    400190: r_foot_CTRL
+    400192: r_foot_CTRL_GRP
+    400194: r_foot_IK
+    400196: r_foot_poleVector
+    400198: r_foot_poleVector_GRP
+    400200: r_leg
+    400202: r_phalanges
+    400204: r_shoulder
+    400206: r_tips_of_toes
+    400208: r_wing
+    400210: r_wing_back_feather_CTRL
+    400212: r_wing_back_feather_CTRL_GRP
+    400214: r_wing_elbow_CTRL
+    400216: r_wing_elbow_CTRL 1
+    400218: r_wing_elbow_CTRL_GRP
+    400220: r_wing_elbow_CTRL_GRP 1
+    400222: r_wing_front_feather_CTRL
+    400224: r_wing_front_feather_CTRL_GRP
+    400226: r_wing_mid_feather_CTRL
+    400228: r_wing_mid_feather_CTRL_GRP
+    400230: r_wing_shoulder_CTRL
+    400232: r_wing_shoulder_CTRL_GRP
+    400234: RIG
+    400236: root
+    400238: spine1
+    400240: spine2
+    400242: spine3
+    400244: spine4
+    400246: spine_spline_curve
+    400248: spine_spline_IK
+    400250: tail_CTRL
+    400252: tail_CTRL_GRP
+    400254: top_beak_CTRL
+    400256: top_beak_CTRL_GRP
+    400258: top_neck_CTRL
+    400260: top_neck_CTRL_GRP
+    400262: top_tail
+    400264: top_tail_CTRL
+    400266: top_tail_CTRL_GRP
+    400268: whole_body_sansFeet_CTRL
+    400270: whole_body_sansFeet_CTRL_GRP
+    2100000: lambert1
+    2100002: duck_base_Duck_Body
+    2100004: duck_base_Duck_Beak
+    2100006: duck_base_Duck_Feet
+    2100008: duck_base_Duck_Wings
+    2100010: duck_base_Duck_Black
+    2100012: fedora_hat
+    4300000: duck_base:duck_wings_folded1
+    4300002: duck_base:duck_body
+    4300004: duck_base:duck_beak
+    4300006: duck_base:r_leg
+    4300008: duck_base:l_leg
+    4300010: duck_base:r__duck_wing
+    4300012: duck_base:l_duck_wing
+    4300014: duck_base:polySurface2
+    4300016: fedora:fedora_GEO
+    9500000: //RootNode
+    13700000: duck_base:duck_beak
+    13700002: duck_base:duck_body
+    13700004: duck_base:duck_wings_folded1
+    13700006: duck_base:l_duck_wing
+    13700008: duck_base:l_leg
+    13700010: duck_base:polySurface2
+    13700012: duck_base:r__duck_wing
+    13700014: duck_base:r_leg
+    13700016: fedora:fedora_GEO
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftFoot' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: root
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: l_leg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: r_leg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: l_phalanges
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: r_foot
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spine1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spine3
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: neck1
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: l_breast
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: r_breast
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: l_shoulder
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: r_shoulder
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: l_wing
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: r_wing
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: l_finger1_tip
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: r_finger1_tip
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: l_eye
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: r_eye
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: beak_bot
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Guido(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GEO
+      parentName: Guido(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: duck_base1
+      parentName: GEO
+      position: {x: 0.000000026226044, y: 0.05016632, z: 0.004840717}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: duck_base:duck_base_model
+      parentName: duck_base1
+      position: {x: -0.000000026226044, y: -0.050099306, z: -0.004840717}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: duck_base:duck_beak
+      parentName: duck_base:duck_base_model
+      position: {x: -0, y: -0.0000670149, z: -0.002753606}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.8565403, y: 1, z: 0.7218791}
+    - name: duck_base:duck_body
+      parentName: duck_base:duck_base_model
+      position: {x: -0, y: -0.0000670149, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: duck_base:duck_legs
+      parentName: duck_base:duck_base_model
+      position: {x: -0, y: 0, z: 0.008112558}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: duck_base:l_leg
+      parentName: duck_base:duck_legs
+      position: {x: -0, y: -0.0000670149, z: -0.008112558}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: duck_base:r_leg
+      parentName: duck_base:duck_legs
+      position: {x: -0, y: -0.0000670149, z: -0.008112558}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: duck_base:duck_wings
+      parentName: duck_base:duck_base_model
+      position: {x: -8.3515217e-10, y: 0.03086847, z: 0.013659315}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: duck_base:l_duck_wing
+      parentName: duck_base:duck_wings
+      position: {x: 8.3515217e-10, y: -0.030935485, z: -0.013659315}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: duck_base:r__duck_wing
+      parentName: duck_base:duck_wings
+      position: {x: 8.3515217e-10, y: -0.030935485, z: -0.013659315}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: duck_base:duck_wings_folded1
+      parentName: duck_base:duck_base_model
+      position: {x: -0, y: -0.0000670149, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: duck_base:polySurface2
+      parentName: duck_base1
+      position: {x: -0.000000026226044, y: -0.05016632, z: -0.004840717}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fedora1
+      parentName: GEO
+      position: {x: -5.9604643e-10, y: 0.102145165, z: 0.024220923}
+      rotation: {x: 6.390281e-17, y: 0.9990046, z: 0.04460754, w: -5.8439966e-17}
+      scale: {x: 1.1118702, y: 1.1118702, z: 1.1118702}
+    - name: fedora:fedora_GEO
+      parentName: fedora1
+      position: {x: 5.9604643e-10, y: -0.0056480826, z: 0.0006467986}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RIG
+      parentName: Guido(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTRLs
+      parentName: RIG
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: IKs
+      parentName: CTRLs
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_foot_IK
+      parentName: IKs
+      position: {x: -0.0064031594, y: 0.000040348135, z: 0.0052079097}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_foot_IK
+      parentName: IKs
+      position: {x: 0.006355604, y: 0.000040348095, z: 0.0052079097}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: spine_spline_IK
+      parentName: IKs
+      position: {x: 0.000012144315, y: 0.052047834, z: 0.017967569}
+      rotation: {x: -0.30500397, y: 0.6596713, z: -0.27971154, w: 0.6273498}
+      scale: {x: 1, y: 1, z: 1}
+    - name: master_CTRL
+      parentName: CTRLs
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_foot_CTRL_GRP
+      parentName: master_CTRL
+      position: {x: -0.01104123, y: 0, z: 0.0067491955}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_foot_CTRL
+      parentName: l_foot_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_foot_poleVector_GRP
+      parentName: l_foot_CTRL
+      position: {x: 0.00999568, y: -0.0015949283, z: -0.022126276}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_foot_poleVector
+      parentName: l_foot_poleVector_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_foot_CTRL_GRP
+      parentName: master_CTRL
+      position: {x: 0.011090023, y: 0, z: 0.0067491955}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_foot_CTRL
+      parentName: r_foot_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_foot_poleVector_GRP
+      parentName: r_foot_CTRL
+      position: {x: -0.010054611, y: -0.0015949283, z: -0.022126276}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_foot_poleVector
+      parentName: r_foot_poleVector_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: whole_body_sansFeet_CTRL_GRP
+      parentName: master_CTRL
+      position: {x: -0.000525687, y: 0.0224719, z: -0.0065973196}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: whole_body_sansFeet_CTRL
+      parentName: whole_body_sansFeet_CTRL_GRP
+      position: {x: 0.000015626269, y: 0.00032884342, z: 0.0001325201}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: butt_CTRL_GRP
+      parentName: whole_body_sansFeet_CTRL
+      position: {x: 0.0005100607, y: 0.008181114, z: -0.009307114}
+      rotation: {x: 0.0019495034, y: -0.6974846, z: -0.002002916, w: 0.71659434}
+      scale: {x: 1, y: 1, z: 1}
+    - name: butt_CTRL
+      parentName: butt_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: tail_CTRL_GRP
+      parentName: butt_CTRL
+      position: {x: -0.044179797, y: -0.0058721066, z: -0.0011951703}
+      rotation: {x: -0.0019495034, y: 0.6974846, z: 0.002002916, w: 0.71659434}
+      scale: {x: 1, y: 1, z: 1}
+    - name: tail_CTRL
+      parentName: tail_CTRL_GRP
+      position: {x: -0.000525687, y: -0.001761494, z: 0.027551783}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bot_tail_CTRL_GRP
+      parentName: tail_CTRL
+      position: {x: 3.4694467e-19, y: -0.006137446, z: 0.00086901896}
+      rotation: {x: -2.9960626e-14, y: 7.983455e-16, z: -6.77171e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bot_tail_CTRL
+      parentName: bot_tail_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0.11320321, z: -0, w: 0.9935719}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mid_tail_CTRL_GRP
+      parentName: tail_CTRL
+      position: {x: -0, y: 4.440892e-18, z: 4.440892e-18}
+      rotation: {x: -2.9960626e-14, y: 7.983455e-16, z: -6.77171e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mid_tail_CTRL
+      parentName: mid_tail_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: top_tail_CTRL_GRP
+      parentName: tail_CTRL
+      position: {x: -6.245004e-19, y: 0.0074952883, z: -0.002769998}
+      rotation: {x: -2.9960626e-14, y: 7.983455e-16, z: -6.77171e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: top_tail_CTRL
+      parentName: top_tail_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: chest_CTRL_GRP
+      parentName: whole_body_sansFeet_CTRL
+      position: {x: 0.0005100607, y: 0.01613599, z: 0.018037561}
+      rotation: {x: 0.38268346, y: -0, z: -0, w: 0.92387956}
+      scale: {x: 1, y: 1, z: 1}
+    - name: chest_CTRL
+      parentName: chest_CTRL_GRP
+      position: {x: -0.0004199112, y: 0.0010427302, z: -0.0035085855}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bot_neck_CTRL_GRP
+      parentName: chest_CTRL
+      position: {x: 0.0004199112, y: 0.012528702, z: -0.0011997741}
+      rotation: {x: 0.59153026, y: -0.2967911, z: 0.6227902, w: -0.41730005}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bot_neck_CTRL
+      parentName: bot_neck_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mid_neck_CTRL_GRP
+      parentName: bot_neck_CTRL
+      position: {x: -0.010930238, y: -1.6653345e-18, z: -3.8857806e-18}
+      rotation: {x: 0.9331501, y: -0.35777417, z: 0.0030920298, w: 0.03491358}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mid_neck_CTRL
+      parentName: mid_neck_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: top_neck_CTRL_GRP
+      parentName: mid_neck_CTRL
+      position: {x: -0.011299787, y: 8.881784e-18, z: -1.36002315e-17}
+      rotation: {x: 0.9572693, y: -0.28428784, z: -0.008756235, w: 0.052337267}
+      scale: {x: 1, y: 1, z: 1}
+    - name: top_neck_CTRL
+      parentName: top_neck_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head_CTRL
+      parentName: top_neck_CTRL
+      position: {x: -0.017591476, y: -0.0047078473, z: 2.0895526e-16}
+      rotation: {x: 0.4683471, y: -0.529765, z: 0.4683471, w: 0.529765}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head_CTRL 1
+      parentName: head_CTRL
+      position: {x: -3.5819548e-17, y: -0.004852671, z: -0.005343114}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 2.7007496, y: 2.7007496, z: 2.7007496}
+    - name: bot_beak_CTRL_GRP
+      parentName: head_CTRL 1
+      position: {x: 3.7374617e-16, y: -0.00037625007, z: 0.013014952}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.37026757, y: 0.37026757, z: 0.37026757}
+    - name: bot_beak_CTRL
+      parentName: bot_beak_CTRL_GRP
+      position: {x: -1.110223e-18, y: 0.0000058748724, z: 8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: eyes_CTRL_GRP
+      parentName: head_CTRL 1
+      position: {x: 1.2666143e-15, y: 0.003628347, z: 0.050969366}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.37026757, y: 0.37026757, z: 0.37026757}
+    - name: eyes_CTRL
+      parentName: eyes_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_eye_CTRL_GRP
+      parentName: eyes_CTRL
+      position: {x: -0.0035955166, y: -0.0002702558, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_eye_CTRL
+      parentName: l_eye_CTRL_GRP
+      position: {x: -0.002689954, y: -0.00021236479, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_eye_CTRL_GRP
+      parentName: eyes_CTRL
+      position: {x: 0.008898612, y: -0.0002702558, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_eye_CTRL
+      parentName: r_eye_CTRL_GRP
+      position: {x: -0.002689954, y: -0.00021236479, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: top_beak_CTRL_GRP
+      parentName: head_CTRL 1
+      position: {x: 3.3282635e-16, y: 0.0009779324, z: 0.013014952}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.37026757, y: 0.37026757, z: 0.37026757}
+    - name: top_beak_CTRL
+      parentName: top_beak_CTRL_GRP
+      position: {x: -1.110223e-18, y: 0.0000058748724, z: -1.0842021e-21}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_wing_shoulder_CTRL_GRP
+      parentName: chest_CTRL
+      position: {x: -0.021140235, y: 0.0019800442, z: 0.0036777307}
+      rotation: {x: -0.3755176, y: 0.11697425, z: 0.0004379261, w: 0.91940385}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_wing_shoulder_CTRL
+      parentName: l_wing_shoulder_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_wing_elbow_CTRL_GRP
+      parentName: l_wing_shoulder_CTRL
+      position: {x: -0.035312846, y: 8.881784e-18, z: -2.220446e-18}
+      rotation: {x: -0.07150611, y: -0.46926537, z: 0.05305477, w: 0.87855685}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_wing_elbow_CTRL
+      parentName: r_wing_elbow_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_feathers_CTRL_GRP
+      parentName: r_wing_elbow_CTRL
+      position: {x: -0.03907234, y: 0.0010109666, z: -0.008108219}
+      rotation: {x: 0.039781917, y: 0.3747298, z: -0.0977859, w: 0.9211042}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_feathers_CTRL
+      parentName: l_feathers_CTRL_GRP
+      position: {x: 0.009823269, y: 0.0036596623, z: 0.010404405}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_wing_back_feather_CTRL_GRP
+      parentName: l_feathers_CTRL
+      position: {x: 0.0058466224, y: -0.00014986545, z: -0.0053409687}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_wing_back_feather_CTRL
+      parentName: l_wing_back_feather_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_wing_front_feather_CTRL_GRP
+      parentName: l_feathers_CTRL
+      position: {x: -0.005119745, y: -0.0018454413, z: 0.0070475508}
+      rotation: {x: 2.675722e-17, y: 0.8909939, z: -2.675722e-17, w: -0.4540153}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_wing_front_feather_CTRL
+      parentName: l_wing_front_feather_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_wing_mid_feather_CTRL_GRP
+      parentName: l_feathers_CTRL
+      position: {x: 3.5527136e-17, y: 1.3322676e-17, z: 8.881784e-18}
+      rotation: {x: 3.4936867e-17, y: 0.93228555, z: -3.4936867e-17, w: -0.36172318}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_wing_mid_feather_CTRL
+      parentName: l_wing_mid_feather_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_wing_shoulder_CTRL_GRP
+      parentName: chest_CTRL
+      position: {x: 0.02092871, y: 0.0019800833, z: 0.003677707}
+      rotation: {x: 0.00043896755, y: 0.91940385, z: -0.37551752, w: 0.1169745}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_wing_shoulder_CTRL
+      parentName: r_wing_shoulder_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_wing_elbow_CTRL_GRP 1
+      parentName: r_wing_shoulder_CTRL
+      position: {x: -0.035312787, y: -1.7763568e-17, z: -6.661338e-18}
+      rotation: {x: 0.06942356, y: 0.4570905, z: 0.05301736, w: 0.8851202}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_wing_elbow_CTRL 1
+      parentName: r_wing_elbow_CTRL_GRP 1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_feathers_CTRL_GRP
+      parentName: r_wing_elbow_CTRL 1
+      position: {x: -0.039593093, y: 0.0010839592, z: 0.008470795}
+      rotation: {x: 0.09788112, y: 0.92630005, z: -0.03823486, w: 0.3618364}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_feathers_CTRL
+      parentName: r_feathers_CTRL_GRP
+      position: {x: -0.010148807, y: 0.0038145133, z: 0.009333591}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_wing_back_feather_CTRL_GRP
+      parentName: r_feathers_CTRL
+      position: {x: -0.0069948374, y: 0.0005481513, z: -0.0037572773}
+      rotation: {x: 0.09788112, y: 0.92630005, z: -0.03823486, w: -0.3618364}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_wing_back_feather_CTRL
+      parentName: r_wing_back_feather_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_wing_front_feather_CTRL_GRP
+      parentName: r_feathers_CTRL
+      position: {x: 0.0056843073, y: -0.0019560882, z: 0.006303713}
+      rotation: {x: 0.09788112, y: 0.92630005, z: -0.03823486, w: -0.3618364}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_wing_front_feather_CTRL
+      parentName: r_wing_front_feather_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_wing_mid_feather_CTRL_GRP
+      parentName: r_feathers_CTRL
+      position: {x: -8.881784e-18, y: 1.3322676e-17, z: 3.8857805e-17}
+      rotation: {x: 0.09788112, y: 0.92630005, z: -0.03823486, w: -0.3618364}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_wing_mid_feather_CTRL
+      parentName: r_wing_mid_feather_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: JOINTs
+      parentName: RIG
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: root
+      parentName: JOINTs
+      position: {x: -0.00052568654, y: 0.022471875, z: -0.0065973154}
+      rotation: {x: 0.4287485, y: -0.51407963, z: -0.4758199, w: 0.5705193}
+      scale: {x: 1, y: 1, z: 1}
+    - name: spine1
+      parentName: root
+      position: {x: -0.00029956855, y: 0.00019029882, z: -0.0000017871064}
+      rotation: {x: 0.9827781, y: -0.18441433, z: 0.010340676, w: 0.0056361556}
+      scale: {x: 1, y: 1, z: 1}
+    - name: spine_spline_curve
+      parentName: spine1
+      position: {x: -0.011583904, y: 2.8048378e-10, z: 5.376366e-13}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: spine2
+      parentName: spine1
+      position: {x: -0.011583904, y: 2.220446e-18, z: -2.5326962e-17}
+      rotation: {x: 0.06187128, y: -0.042990327, z: 0.26412305, w: 0.9615419}
+      scale: {x: 1, y: 1, z: 1}
+    - name: spine3
+      parentName: spine2
+      position: {x: -0.014755618, y: -5.151466e-18, z: -2.3255058e-19}
+      rotation: {x: -0.0381354, y: 0.025737189, z: -0.10135242, w: 0.9937862}
+      scale: {x: 1, y: 1, z: 1}
+    - name: spine4
+      parentName: spine3
+      position: {x: -0.012725915, y: -3.936773e-18, z: 5.6775594e-19}
+      rotation: {x: 0.10524811, y: -0.04946154, z: -0.21740024, w: 0.9691303}
+      scale: {x: 1, y: 1, z: 1}
+    - name: neck1
+      parentName: spine4
+      position: {x: -0.010930238, y: -1.5104186e-18, z: 1.4200428e-19}
+      rotation: {x: 0.9331501, y: -0.35777417, z: 0.0030920298, w: 0.03491358}
+      scale: {x: 1, y: 1, z: 1}
+    - name: neck2
+      parentName: neck1
+      position: {x: -0.011299787, y: 4.246544e-18, z: -1.9216221e-17}
+      rotation: {x: 0.9572693, y: -0.28428784, z: -0.008756235, w: 0.052337267}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head
+      parentName: neck2
+      position: {x: -0.012120329, y: -1.3615173e-18, z: 1.2944672e-17}
+      rotation: {x: -8.561046e-17, y: 1.9353811e-17, z: 0.09925583, w: 0.995062}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mouth
+      parentName: head
+      position: {x: -0.007580608, y: -0.013717215, z: 5.3065857e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: beak_top
+      parentName: mouth
+      position: {x: -0.0013896094, y: -0.002310406, z: 5.621417e-17}
+      rotation: {x: 1.850444e-17, y: 1.0946935e-16, z: 0.9860122, w: 0.16667318}
+      scale: {x: 1, y: 1, z: 1}
+    - name: beak_top_end
+      parentName: beak_top
+      position: {x: -0.0009395375, y: 0.009150424, z: -7.313731e-16}
+      rotation: {x: -0.49669993, y: -0.50327843, z: -0.49669993, w: 0.50327843}
+      scale: {x: 1, y: 1, z: 1}
+    - name: beak_bot
+      parentName: mouth
+      position: {x: 0.0017688005, y: -0.0034095943, z: 5.621417e-17}
+      rotation: {x: 0.41345212, y: -0.5736352, z: 0.41345212, w: 0.5736352}
+      scale: {x: 1, y: 1, z: 1}
+    - name: beak_bot_end
+      parentName: beak_bot
+      position: {x: -5.8678197e-16, y: 0.000094211435, z: 0.007643406}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head_top
+      parentName: head
+      position: {x: -0.018797116, y: -4.3741187e-18, z: 9.899026e-18}
+      rotation: {x: 0.41345212, y: -0.5736352, z: 0.41345212, w: 0.5736352}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_eye
+      parentName: head
+      position: {x: -0.011590363, y: -0.0074660657, z: -0.005819932}
+      rotation: {x: 0.41345212, y: -0.5736352, z: 0.41345212, w: 0.5736352}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_eye
+      parentName: head
+      position: {x: -0.011590363, y: -0.0074660657, z: 0.0058380086}
+      rotation: {x: 0.41345212, y: -0.5736352, z: 0.41345212, w: 0.5736352}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_breast
+      parentName: spine3
+      position: {x: 0.002032322, y: -0.015933087, z: -0.012133782}
+      rotation: {x: 0.5011666, y: -0.63323545, z: 0.27977985, w: 0.5191996}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_shoulder
+      parentName: l_breast
+      position: {x: -0.016591359, y: 3.9803894e-18, z: 1.1834018e-17}
+      rotation: {x: -0.17927593, y: 0.12281366, z: 0.12080298, w: 0.96859884}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_wing
+      parentName: l_shoulder
+      position: {x: -0.035312846, y: 3.8493243e-18, z: 1.9674437e-18}
+      rotation: {x: -0.07140178, y: -0.033509094, z: -0.014421643, w: 0.9967803}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_finger1
+      parentName: l_wing
+      position: {x: -0.023486983, y: -0.0004803055, z: 0.0011036266}
+      rotation: {x: -0.06906504, y: -0.65056515, z: -0.07984175, w: 0.7520774}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_finger1_tip
+      parentName: l_finger1
+      position: {x: -0.0019191499, y: -0.00074214867, z: 0.0055248514}
+      rotation: {x: -8.235806e-17, y: 0.8909939, z: 8.235806e-17, w: 0.4540153}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_finger2
+      parentName: l_wing
+      position: {x: -0.024325844, y: 0.0015873476, z: -0.0075164973}
+      rotation: {x: -0.07677434, y: -0.72318363, z: -0.072459534, w: 0.68253994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_finger2_tip
+      parentName: l_finger2
+      position: {x: 0.0011386258, y: -0.0036596623, z: 0.008816584}
+      rotation: {x: -7.923518e-17, y: 0.93228555, z: 7.923518e-17, w: 0.36172318}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_finger3
+      parentName: l_wing
+      position: {x: -0.023909973, y: 0.0013447597, z: -0.015422166}
+      rotation: {x: 0.039781917, y: 0.3747298, z: -0.0977859, w: 0.9211042}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_finger3_tip
+      parentName: l_finger3
+      position: {x: -0.004776276, y: -0.0016346015, z: -0.0025130569}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_breast
+      parentName: spine3
+      position: {x: 0.0010956794, y: -0.017145995, z: 0.010489788}
+      rotation: {x: 0.4748714, y: -0.6014742, z: -0.29751462, w: -0.56939536}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_shoulder
+      parentName: r_breast
+      position: {x: -0.016591426, y: 6.9200987e-18, z: -5.3117812e-18}
+      rotation: {x: 0.17337015, y: -0.11959633, z: 0.12346865, w: 0.9697397}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_wing
+      parentName: r_shoulder
+      position: {x: -0.035312787, y: -7.094609e-18, z: -1.26026525e-17}
+      rotation: {x: 0.06870866, y: 0.03383696, z: -0.014445587, w: 0.99695814}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_finger1
+      parentName: r_wing
+      position: {x: -0.02562952, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_finger1_tip
+      parentName: r_finger1
+      position: {x: -0.0037599998, y: -8.881784e-18, z: -8.881784e-18}
+      rotation: {x: -0.3618364, y: 0.03823486, z: 0.92630005, w: 0.09788112}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_finger2
+      parentName: r_wing
+      position: {x: -0.02531218, y: 0.0019324416, z: 0.008487603}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_finger2_tip
+      parentName: r_finger2
+      position: {x: -0.008161402, y: -0.0021563708, z: -0.001258254}
+      rotation: {x: -0.3618364, y: 0.03823486, z: 0.92630005, w: 0.09788112}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_finger3
+      parentName: r_wing
+      position: {x: -0.022658939, y: 0.0019259102, z: 0.01599131}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_finger3_tip
+      parentName: r_finger3
+      position: {x: -0.0062632263, y: -0.0019259102, z: -0.0013036361}
+      rotation: {x: -0.3618364, y: 0.03823486, z: 0.92630005, w: 0.09788112}
+      scale: {x: 1, y: 1, z: 1}
+    - name: butt
+      parentName: spine1
+      position: {x: -0.004127798, y: 0.011585585, z: 0.00159646}
+      rotation: {x: -0.56031203, y: 0.8270497, z: 0.025119392, w: 0.037527602}
+      scale: {x: 1, y: 1, z: 1}
+    - name: top_tail
+      parentName: butt
+      position: {x: -0.019453706, y: -1.4259427e-17, z: -4.2327254e-18}
+      rotation: {x: -0.0019495034, y: 0.6974846, z: 0.002002916, w: 0.71659434}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mid_tail
+      parentName: butt
+      position: {x: -0.016642863, y: -0.0074796923, z: 0.00007485333}
+      rotation: {x: -0.0019495034, y: 0.6974846, z: 0.002002916, w: 0.71659434}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bot_tail
+      parentName: butt
+      position: {x: -0.015739867, y: -0.013612187, z: 0.00009833672}
+      rotation: {x: -0.0017102353, y: 0.6118803, z: 0.0022107312, w: 0.7909455}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pelvis
+      parentName: root
+      position: {x: -0.000000024014707, y: 1.0587912e-24, z: -7.411538e-24}
+      rotation: {x: -0.022225829, y: 0.7245909, z: 0.6735176, w: 0.1443885}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_leg
+      parentName: pelvis
+      position: {x: -0.011747766, y: 1.561251e-19, z: -2.359224e-18}
+      rotation: {x: 0.02516445, y: -0.2687969, z: 0.2169367, w: 0.93811166}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_foot
+      parentName: l_leg
+      position: {x: -0.010591168, y: -1.0654679e-18, z: -1.1059277e-18}
+      rotation: {x: 0.39149982, y: 0.37733147, z: -0.5824078, w: 0.6042765}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_phalanges
+      parentName: l_foot
+      position: {x: -0.011793121, y: -3.0531133e-18, z: 2.220446e-18}
+      rotation: {x: -0.016908403, y: -0.043127883, z: 0.38190353, w: 0.9230405}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_tips_of_toes
+      parentName: l_phalanges
+      position: {x: -0.009970435, y: 3.0824782e-18, z: -6.1062266e-18}
+      rotation: {x: 0, y: -0.574539, z: -0, w: 0.8184773}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_leg
+      parentName: pelvis
+      position: {x: -0.010194737, y: -0.006295949, z: 0.001013618}
+      rotation: {x: -0.0059015336, y: -0.0014360102, z: 0.12698513, w: 0.991886}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_foot
+      parentName: r_leg
+      position: {x: -0.010591142, y: -2.2087832e-18, z: -2.2579164e-19}
+      rotation: {x: 0.76447064, y: 0.07382266, z: -0.020442383, w: 0.6400915}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_phalanges
+      parentName: r_foot
+      position: {x: -0.011793121, y: -6.8695046e-18, z: 1.110223e-18}
+      rotation: {x: 0.0007436685, y: 0.040354412, z: -0.018410293, w: 0.99901557}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_tips_of_toes
+      parentName: r_phalanges
+      position: {x: -0.009970391, y: 6.1313113e-18, z: 1.3877788e-17}
+      rotation: {x: 0.57453847, y: -1.627535e-16, z: 0.8184776, w: 2.3185584e-16}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

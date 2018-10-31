@@ -4,7 +4,7 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: UnderwaterLens
   m_Shader: {fileID: 4800000, guid: 7232b13ea3e0d074bbad77a1a74ca4cd, type: 3}
@@ -68,8 +68,8 @@ Material:
     - _Cutout1: 0
     - _Cutout2: 0
     - _DetailNormalMapScale: 1
-    - _DistortionIntensity: 0.3
-    - _DistortionSpeed: 3
+    - _DistortionIntensity: 0.9
+    - _DistortionSpeed: 16.07
     - _DstBlend: 0
     - _Glossiness: 0.5
     - _Metallic: 0
