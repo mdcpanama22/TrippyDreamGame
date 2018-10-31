@@ -848,6 +848,48 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4970701316137082, guid: eb55d06c5fbf45347adbc0b0ffb5e12e,
     type: 2}
   m_PrefabInternal: {fileID: 80728366}
+--- !u!1001 &88003819
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4824378710725250, guid: c32bbbf6eb7c56e4cbb6846ed1c9b4eb, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -44.35681
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824378710725250, guid: c32bbbf6eb7c56e4cbb6846ed1c9b4eb, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -7.36118
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824378710725250, guid: c32bbbf6eb7c56e4cbb6846ed1c9b4eb, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -229.4443
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824378710725250, guid: c32bbbf6eb7c56e4cbb6846ed1c9b4eb, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824378710725250, guid: c32bbbf6eb7c56e4cbb6846ed1c9b4eb, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824378710725250, guid: c32bbbf6eb7c56e4cbb6846ed1c9b4eb, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824378710725250, guid: c32bbbf6eb7c56e4cbb6846ed1c9b4eb, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824378710725250, guid: c32bbbf6eb7c56e4cbb6846ed1c9b4eb, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c32bbbf6eb7c56e4cbb6846ed1c9b4eb, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!4 &105186637 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4834120031384318, guid: c4c92a7ced1c64840aa701af4596b01d,
