@@ -26,9 +26,9 @@ GameObject:
   - component: {fileID: 114753774752978744}
   - component: {fileID: 114335211683910232}
   - component: {fileID: 114136053220180916}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RealFPSController
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 81626670185199412}
   - component: {fileID: 124930327034008366}
   - component: {fileID: 114279771706197172}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FirstPersonCharacter
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
