@@ -12,12 +12,14 @@ public class FireGuy : MonoBehaviour
 	int index = 0;
 
 	bool active = false;
-
+	AppleGuy regText;
 	GameObject player;
 
 	// Use this for initialization
 	void Start()
 	{
+		regText = GetComponent<AppleGuy>();
+		regText.enabled = true;
 		player = GameObject.Find("FPSController");
 		if (player == null)
 		{
@@ -38,7 +40,11 @@ public class FireGuy : MonoBehaviour
 			}
 			else if (Input.GetMouseButtonDown(0))
 			{
-				if (index < waterResponse.Length)
+				if (fancyText.revealing)
+				{
+					fancyText.FinishLine();
+				}
+				else if (index < waterResponse.Length)
 				{
 					fancyText.SetText(waterResponse[index]);
 					index += 1;
@@ -48,6 +54,7 @@ public class FireGuy : MonoBehaviour
 					index = 0;
 					active = false;
 					canvas.SetActive(false);
+					regText.enabled = true;
 					if (GetComponent<AudioSource>() != null && GetComponent<AudioSource>().isPlaying) { GetComponent<AudioSource>().Pause(); }
 				}
 			}
@@ -56,18 +63,12 @@ public class FireGuy : MonoBehaviour
 
 	public void Water()
 	{
-		if (fancyText.revealing)
+		if (!active)
 		{
-			fancyText.FinishLine();
-		}
-		else
-		{
-			if (!active)
-			{
-				active = true;
-				canvas.SetActive(true);
-				if (GetComponent<AudioSource>() != null && !GetComponent<AudioSource>().isPlaying) { GetComponent<AudioSource>().Play(); }
-			}
+			regText.enabled = false;
+			active = true;
+			canvas.SetActive(true);
+			if (GetComponent<AudioSource>() != null && !GetComponent<AudioSource>().isPlaying) { GetComponent<AudioSource>().Play(); }
 		}
 	}
 }

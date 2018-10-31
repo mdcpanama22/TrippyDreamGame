@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 33218082579549550}
   - component: {fileID: 23660804071288754}
   - component: {fileID: 65757413335885360}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,9 +39,9 @@ GameObject:
   - component: {fileID: 4983429174340796}
   - component: {fileID: 198970150779844622}
   - component: {fileID: 199440449817588996}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Particle System
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,9 +54,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4217172802233472}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BigCampFire
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,9 +72,9 @@ GameObject:
   - component: {fileID: 33749597151640046}
   - component: {fileID: 23070820142763366}
   - component: {fileID: 65154031958358860}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,9 +90,9 @@ GameObject:
   - component: {fileID: 33671024405992086}
   - component: {fileID: 23051186351648116}
   - component: {fileID: 65117864484211490}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
