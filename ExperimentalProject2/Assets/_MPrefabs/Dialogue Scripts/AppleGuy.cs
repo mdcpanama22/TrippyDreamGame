@@ -36,7 +36,7 @@ public class AppleGuy : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (active) {
-            if (Vector3.Distance(player.transform.position, transform.position) > 6f) {
+            if (Vector3.Distance(player.transform.position, transform.position) > 10f) {
                 active = false;
                 canvas.SetActive(false);
                 if (GetComponent<AudioSource>() != null && GetComponent<AudioSource>().isPlaying) { GetComponent<AudioSource>().Pause(); }

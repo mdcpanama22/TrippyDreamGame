@@ -57,8 +57,12 @@ public class SkyBoxShifter : MonoBehaviour
     Skybox sky;
     Material skyMat;
 
+    [HideInInspector]
+    public bool DayTypeB = false;
     void Start()
     {
+        DayType = TimeOfDay.Main; //INITIALIZE TO MAIN DAY
+
         skyMat = RenderSettings.skybox;
         mainLight = GameObject.Find("Directional Light").GetComponent<Light>();
 
@@ -145,5 +149,31 @@ public class SkyBoxShifter : MonoBehaviour
         skyMat.SetFloat("_AtmosphereThickness", i);
 
 
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(other.gameObject.name);
+        if (other.gameObject.name == "DarkForest")
+        {
+            DayTypeB = !DayTypeB;
+
+            if (DayTypeB)
+                DayType = TimeOfDay.DarkForest;
+            else
+                DayType = TimeOfDay.Main;
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.collider.name == "DarkForest")
+        {
+            DayTypeB = !DayTypeB;
+
+            if (DayTypeB)
+                DayType = TimeOfDay.DarkForest;
+            else
+                DayType = TimeOfDay.Main;
+        }
     }
 }
