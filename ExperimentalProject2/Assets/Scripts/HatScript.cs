@@ -6,51 +6,27 @@ using UnityEngine.UI;
 public class HatScript : MonoBehaviour
 {
 	[SerializeField] GameObject canvas;
-	[SerializeField] FancyText fancyText;
-	[SerializeField] Font font;
-	[SerializeField] float activeDistance;
+	[SerializeField] string hatName;
+	[SerializeField] Text text;
+	[SerializeField] float displayTime = 5f;
+	float startDisplayTime = Mathf.Infinity;
 
-	bool active = false;
-	GameObject player;
-
-	// Use this for initialization
-	void Start()
+	private void Update()
 	{
-		player = GameObject.Find("FPSController");
-		if (player == null)
-			player = GameObject.Find("RealFPSController");
-	}
-	
-	// Update is called once per frame
-	void Update()
-	{
-		if (active)
+		if (Time.time - startDisplayTime >= displayTime)
 		{
-			if (Vector3.Distance(player.transform.position, transform.position) > activeDistance)
-			{
-				active = false;
-				canvas.SetActive(false);
-			}
-			else
-			{
-				if (Input.GetKeyDown(KeyCode.Y))
-					return;
-				else if (Input.GetKeyDown(KeyCode.T))
-					return;
-			}
+			canvas.SetActive(false);
+			Destroy(gameObject);
 		}
 	}
 
 	void Trigger()
 	{
-		if (fancyText.revealing)
-		{
-			fancyText.FinishLine();
-		}
-		else if (!active)
-		{
-			active = true;
-			canvas.SetActive(true);
-		}
+		GetComponent<Collider>().enabled = false;
+		foreach (Renderer r in GetComponentsInChildren<Renderer>())
+			r.enabled = false;
+		startDisplayTime = Time.time;
+		canvas.SetActive(true);
+		text.text = "You put on the " + hatName;
 	}
 }
