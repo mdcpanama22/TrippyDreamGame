@@ -21,8 +21,10 @@ public class NoTouchWater : MonoBehaviour {
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (hit.gameObject.tag == "Respawn")
+
+        if (string.Compare(hit.gameObject.tag, "Respawn") == 0)
         {
+            print(hit.gameObject.tag);
             transform.position = respawnPoint;
         } else if (cooldown)
         {
