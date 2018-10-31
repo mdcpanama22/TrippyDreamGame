@@ -261,10 +261,12 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: "Avatar Rig Configuration mis-match. Inbetween bone rotation
-      in configuration does not match rotation in animation file:\n\t'spine2' : rotation
-      error = 3.286155 deg\n\t'L_forearmTwist' : rotation error = 55.571430 deg\n\t'R_forearmTwist'
-      : rotation error = 56.930824 deg\n"
+    rigImportWarnings: "Avatar Rig Configuration mis-match. Bone length in configuration
+      does not match position in animation file:\n\t'spine1' : position error = 19.625288
+      mm\nAvatar Rig Configuration mis-match. Inbetween bone rotation in configuration
+      does not match rotation in animation file:\n\t'spine2' : rotation error = 13.780558
+      deg\n\t'L_forearmTwist' : rotation error = 54.896309 deg\n\t'R_forearmTwist'
+      : rotation error = 54.770073 deg\n"
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
