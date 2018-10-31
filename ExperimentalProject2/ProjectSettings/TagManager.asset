@@ -9,6 +9,7 @@ TagManager:
   - Pickup
   - Interactable_Far
   - Fire
+  - Snow
   layers:
   - Default
   - TransparentFX
