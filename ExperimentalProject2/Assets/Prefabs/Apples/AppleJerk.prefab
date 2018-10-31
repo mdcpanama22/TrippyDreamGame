@@ -149,8 +149,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1786683744346182}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.71, y: 1.35, z: -3.216}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.6, y: 1.338, z: -3.216}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4652603222328652}
@@ -270,7 +270,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 17470ee8b0bd54f42884f36b753b0800, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.3
-  m_Pitch: 2.5
+  m_Pitch: 0.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -368,8 +368,8 @@ MonoBehaviour:
   revealing: 0
   charDelay: 0.02
   newLinePause: 0.8
-  effectType: 1
-  effectStrength: 0.2
+  effectType: 2
+  effectStrength: 0.3
   createtype: 2
   createTime: 0.2
 --- !u!114 &114380607586806804
@@ -384,7 +384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3021064, g: 1, b: 0.21226418, a: 1}
+  m_Color: {r: 0.119526654, g: 0.745283, b: 0.03867035, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -392,7 +392,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 055f94bfbe70beb4ab941bc01c0a0738, type: 3}
+    m_Font: {fileID: 12800000, guid: 6768495eeff08a0469302dd263f459ce, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -417,7 +417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.6462264, b: 0.6462264, a: 0.8235294}
+  m_Color: {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 0.8235294}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
